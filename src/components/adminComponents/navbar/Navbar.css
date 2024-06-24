@@ -1,0 +1,77 @@
+.admin-custom-navbar {
+  margin: 10px;
+  border-radius: 10px;
+  background: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 10px 20px;
+}
+
+.admin-navbar-logo {
+  height: 40px;
+}
+
+.admin-navbar-center {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  color: #32CD32;
+}
+
+.admin-navbar-actions {
+  display: flex;
+  align-items: center;
+}
+
+.admin-logout-text {
+  color: red;
+  cursor: pointer;
+  font-size: 0.875rem;
+  margin-right: 10px;
+  transition: color 0.3s;
+}
+
+.admin-logout-text:hover {
+  color: darkred;
+}
+
+.admin-dropdown-icon {
+  display: none;
+  cursor: pointer;
+  font-size: 1.5rem;
+}
+
+.admin-dropdown-menu {
+  position: absolute;
+  right: 10px;
+  top: 50px;
+  background: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.admin-logout-text-dropdown {
+  color: red;
+  cursor: pointer;
+  font-size: 0.875rem;
+}
+
+.admin-logout-text-dropdown:hover {
+  color: darkred;
+}
+
+@media (max-width: 768px) {
+  .admin-logout-text {
+    display: none;
+  }
+
+  .admin-dropdown-icon {
+    display: block;
+  }
+
+  .admin-navbar-center {
+    position: static;
+    transform: none;
+  }
+}

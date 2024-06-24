@@ -1,0 +1,169 @@
+.dashboard-seo-container {
+    margin: 20px;
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.dashboard-seo-header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.dashboard-seo-add-button {
+    padding: 8px 16px;
+    background-color: #0199a4;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.dashboard-seo-add-button:hover {
+    background-color: #017885;
+    transform: translateY(-2px);
+}
+
+.dashboard-seo-table-container {
+    overflow-x: auto;
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+.dashboard-seo-table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    margin-bottom: 20px;
+}
+
+.dashboard-seo-table th,
+.dashboard-seo-table td {
+    border: 1px solid #e0e0e0;
+    padding: 12px;
+    text-align: left;
+}
+
+.dashboard-seo-table th {
+    background-color: #f5f5f5;
+    font-weight: bold;
+    color: #333;
+}
+
+.dashboard-seo-id-column {
+    width: 5%;
+}
+
+.dashboard-seo-image-column {
+    width: 20%;
+}
+
+.dashboard-seo-name-column {
+    width: 50%;
+}
+
+.dashboard-seo-actions-column {
+    width: 25%;
+}
+
+.dashboard-seo-table-image {
+    max-width: 100px;
+    max-height: 60px;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+.dashboard-seo-actions-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.dashboard-seo-edit-button,
+.dashboard-seo-delete-button {
+    padding: 6px 12px;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 12px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    width: 100%;
+}
+
+.dashboard-seo-edit-button {
+    background-color: #4caf50;
+}
+
+.dashboard-seo-delete-button {
+    background-color: #f44336;
+}
+
+.dashboard-seo-edit-button:hover,
+.dashboard-seo-delete-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.dashboard-seo-edit-button:hover {
+    background-color: #45a049;
+}
+
+.dashboard-seo-delete-button:hover {
+    background-color: #d32f2f;
+}
+
+.dashboard-seo-pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.dashboard-seo-pagination button {
+    padding: 8px 12px;
+    margin: 0 4px;
+    background-color: #f2f2f2;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.dashboard-seo-pagination button.active {
+    background-color: #0199a4;
+    color: white;
+}
+
+.dashboard-seo-pagination button:hover:not(.active) {
+    background-color: #ddd;
+    transform: translateY(-2px);
+}
+
+@media (max-width: 768px) {
+    .dashboard-seo-table-container {
+        padding: 10px;
+    }
+
+    .dashboard-seo-table th,
+    .dashboard-seo-table td {
+        padding: 8px;
+    }
+
+    .dashboard-seo-add-button,
+    .dashboard-seo-edit-button,
+    .dashboard-seo-delete-button {
+        padding: 6px 10px;
+        font-size: 12px;
+    }
+
+    .dashboard-seo-pagination button {
+        padding: 6px 10px;
+    }
+}
